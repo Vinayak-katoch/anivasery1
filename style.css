@@ -1,0 +1,80 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #ffe6f0; /* हल्का पिंक */
+    color: #333;
+    transition: all 0.3s ease;
+}
+h1, h2 {
+    font-family: 'Great Vibes', cursive;
+    color: #d63384; /* गहरा पिंक */
+    text-align: center;
+}
+header {
+    background: #d63384;
+    color: #fff;
+    padding: 1em 0;
+}
+section {
+    padding: 2em;
+}
+#hero {
+    background: url('photos/waterfall.jpg') center/cover no-repeat;
+    color: #fff;
+    text-shadow: 1px 1px 5px #000;
+    padding: 5em 2em;
+    text-align: center;
+}
+#gallery .photos {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 10px;
+}
+#gallery .photos img {
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s;
+}
+#gallery .photos img:hover {
+    transform: scale(1.05);
+}
+button {
+    background-color: #d63384;
+    color: #fff;
+    border: none;
+    padding: 0.75em 1.5em;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+button:hover {
+    background-color: #b0256f;
+}
+#surprise-message {
+    margin-top: 1em;
+    font-size: 1.2em;
+    color: #d63384;
+    font-weight: bold;
+}
+#countdown {
+    font-size: 1.5em;
+    text-align: center;
+    margin-top: 1em;
+    color: #d63384;
+}
+footer {
+    background: #d63384;
+    color: #fff;
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 2em;
+}
+.petal, .heart {
+    position: absolute;
+    top: 0;
+    animation: fall 10s linear infinite;
+}
+@keyframes fall {
+    to { transform: translateY(100vh) rotate(360deg); }
+}
